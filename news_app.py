@@ -10,7 +10,7 @@ nltk.download('wordnet')
 nltk.download('stopwords')
 nltk.download('omw-1.4')
 
-# @st.cache(allow_output_mutation=True)
+@st.cache(allow_output_mutation=True)
 def load_model():
     # load the model from disk
     model = pickle.load(open('logistic_regression.model', 'rb'))
